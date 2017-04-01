@@ -1,0 +1,51 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" x:Class="Opus.Samples.Silverlight.CustomView.Views.CustomView"
+    mc:Ignorable="d" Height="516" Width="745.25">
+    
+    <Grid x:Name="LayoutRoot">
+    	<Grid.Background>
+    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    			<GradientStop Color="#FF93C6E8" Offset="0"/>
+    			<GradientStop Color="White" Offset="1"/>
+    		</LinearGradientBrush>
+    	</Grid.Background>
+    	<ScrollViewer Margin="93,79,41,28" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" VerticalScrollBarVisibility="Auto">
+    		<ScrollViewer.Effect>
+    			<DropShadowEffect ShadowDepth="0" BlurRadius="11"/>
+    		</ScrollViewer.Effect>
+    		<ScrollViewer.Background>
+    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    				<GradientStop Color="#FFD2D2D2" Offset="0"/>
+    				<GradientStop Color="White" Offset="0.123"/>
+    				<GradientStop Color="#FFD2D2D2" Offset="1"/>
+    				<GradientStop Color="#FFF9F9F9" Offset="0.809"/>
+    			</LinearGradientBrush>
+    		</ScrollViewer.Background>
+    		<ScrollViewer.RenderTransform>
+    			<CompositeTransform Rotation="-2.728"/>
+    		</ScrollViewer.RenderTransform>
+    	<toolkit:Accordion x:Name="FieldsPanel" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    			
+    		</toolkit:Accordion>
+    	</ScrollViewer>
+    	<Border BorderBrush="Black" BorderThickness="1" Height="44" VerticalAlignment="Top" CornerRadius="20" Margin="101,38,108,0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+    		<Border.Effect>
+    			<DropShadowEffect ShadowDepth="1" BlurRadius="9"/>
+    		</Border.Effect>
+    		<Border.RenderTransform>
+    			<CompositeTransform Rotation="4.099"/>
+    		</Border.RenderTransform>
+    		<Border.Background>
+    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    				<GradientStop Color="#FFE3E3E3" Offset="0"/>
+    				<GradientStop Color="#FFA7A0A0" Offset="1"/>
+    			</LinearGradientBrush>
+    		</Border.Background>
+    		<StackPanel x:Name="CommandsPanel" Margin="-1"/>
+    	</Border>
+    </Grid>
+</UserControl>

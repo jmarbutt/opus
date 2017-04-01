@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Opus.Controls" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input" mc:Ignorable="d">
+
+
+	<Style TargetType="local:ViewModelView">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="local:ViewModelView">
+					<Grid x:Name="LayoutRoot" />
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="local:EditDataForm">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="local:EditDataForm" >
+					<Grid  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+						<Grid x:Name="LayoutRoot"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+							<ContentPresenter />
+						</Grid>
+						<Controls:ValidationSummary x:Name="validationSummary" VerticalAlignment="Bottom" Margin="8,0,8,8"  >
+							<Controls:ValidationSummary.Effect>
+								<DropShadowEffect/>
+							</Controls:ValidationSummary.Effect>
+						</Controls:ValidationSummary>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>
